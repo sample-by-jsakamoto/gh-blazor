@@ -1,0 +1,26 @@
+{
+  "name": "gh-blazor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildcss": "postcss wwwroot/css/app.css -o wwwroot/css/app.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TDuffinNTU/gh-blazor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TDuffinNTU/gh-blazor/issues"
+  },
+  "homepage": "https://github.com/TDuffinNTU/gh-blazor#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}

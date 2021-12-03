@@ -10,18 +10,17 @@
 @if (hostEnv.IsDevelopment())
 {
    bstr = "/";
-   Console.WriteLine("Dev");
+   //Console.WriteLine("Dev");
 }
 else
 {
    bstr = "/gh-blazor/";
-   Console.WriteLine(bstr);
+   //Console.WriteLine(bstr);
 }
 
 <base href="@bstr" />
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-<link href="css/app.css" rel="stylesheet" />
-<link href="gh-blazor.styles.css" rel="stylesheet" />
+<link href="css/app.min.css" rel="stylesheet" />
+@* <link href="gh-blazor.styles.css" rel="stylesheet" /> *@
 
 @code
 {

@@ -1,29 +1,30 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Thomas Duffin</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
+﻿<nav class="bg-gray-800 flex flex-col pt-5 filter drop-shadow-md">
+    <a href=""class="place-self-center ">
+        <img src="imgs/ProfilePic.jpg" class="w-32 rounded-lg hover:opacity-75">
+    </a>
+    <ul class="flex flex-col mx-5 pt-5 space-y-3" style="width:130px;">
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="projects">
-                <span class="oi oi-project" aria-hidden="true"></span> Projects
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="https://www.github.com/tduffinntu">
-                <span class="oi oi-code " data-icon="akar-icons:github-fill" aria-hidden="true"></span> My Github
-            </NavLink>
-        </li>
+        <NavLink class="nav-item" href="" Match="NavLinkMatch.All">
+            <span class="oi oi-home mr-2" aria-hidden="true"></span> Home
+        </NavLink>
+
+        <NavLink class="nav-item" href="projects">
+            <span class="oi oi-project mr-2" aria-hidden="true" ></span> Projects
+        </NavLink>
+
+        <NavLink class="nav-item" href="blog">
+            <span class="oi oi-book mr-2" aria-hidden="true" ></span> Blog
+        </NavLink>
+
+        <NavLink class="nav-item" href="https://github.com/tduffinntu/gh-blazor">
+            <span class="oi oi-code mr-2" aria-hidden="true" ></span> Site Repo
+        </NavLink>
+
+        <NavLink class="nav-item flex flex-row" href="https://github.com/tduffinntu">
+            <span class="iconify align-self-center mt-1 mr-2" data-icon="akar-icons:github-fill"></span> My GitHub
+        </NavLink>
     </ul>
-</div>
+</nav>
 
 @code {
     private bool collapseNavMenu = true;
